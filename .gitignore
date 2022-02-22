@@ -1,4 +1,5 @@
 *.log
 *.zip
-*.jpg
-*.png
+# *.jpg
+# *.png
+# I need add images for publish in the github lel
