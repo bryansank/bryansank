@@ -1,28 +1,3 @@
-:root{
-    --gray: #c1c1c1;
-    --green-light: #54fcb6;
-    --lg: 32px;
-    --md: 22px;
-    --sm: 12px;
-    --ms: 17px;
-    --azulito-besho: #24d6ed57;
-}
-body{
-    font-family: 'Quicksand';
-    margin: 0;
-    padding: 0;
-}
-
-body::-webkit-scrollbar{
-    width: 6px;
-}
-
-body::-webkit-scrollbar-thumb{
-    background-color: var(--azulito-besho);
-    border-radius: 50px;
-}
-/* End Global */
-
 .contactMe{
     display: grid;
     grid-template-columns: 1fr 1fr;

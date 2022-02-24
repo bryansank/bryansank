@@ -7,13 +7,52 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet" /> 
+
         <!-- Styles -->
-        <link href="./assets/style.css" rel="stylesheet"/>
+        <link href="./assets/styles/style.css" rel="stylesheet"/>
+        <link href="./assets/styles/social.css" rel="stylesheet"/>
+
+        <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    
+        <style> 
+            :root{
+                --hospital: #11daa7;
+                --hospital-social: #5ceafff2;
+                --pink-color: #b29fd8;
+                --gray: #c1c1c1;
+                --green-light: #54fcb6;
+                --azulito-besho: #24d6ed57;
+
+                --lgBig: 40px;
+                --lg: 32px;
+                --md-l: 30px;
+                --md: 22px;
+                --md-m: 15px;
+                --sm: 12px;
+                --ms: 17px;
+            }
+
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: 'Quicksand';
+            }
+
+            body::-webkit-scrollbar{
+                width: 6px;
+            }
+
+            body::-webkit-scrollbar-thumb{
+                background-color: var(--hospital-social);
+                border-radius: 50px;
+            }
+        </style>
     </head>
     <body>
+
         <header class="contactMe">
             <div class="contactMe_imageContainer">
-                <figure><img src="./assets/img_contact.jpg" alt="img-contact" /></figure>
+                <figure><img src="./assets/images/img_contact.jpg" alt="img-contact" /></figure>
             </div>
             <div class="contactMe_contentContainer">
                 <div class="contactMe_titleContainer">
@@ -27,9 +66,6 @@
             </div>
         </header>
 
-
-            
-
         <section id="Cards-Services">
 
             <h2>Hola Mundo! Esto es un Professional Marketing Solutions.</h2>
@@ -40,7 +76,7 @@
                         <figure>
                             <div class="circulo size-ms oneB"></div>
                             <div class="circulo size-lg oneA"></div>
-                            <img src="./assets/note.png" alt="icono_card" />
+                            <img src="./assets/images/note.png" alt="icono_card" />
                         </figure>
                     </div>
                     <div class="CardText">
@@ -54,7 +90,7 @@
                         <figure>
                             <div class="circulo size-lg twoA"></div>
                             <div class="circulo size-ms twoB"></div>
-                            <img src="./assets/shopping-cart.png" alt="icono_card" />
+                            <img src="./assets/images/shopping-cart.png" alt="icono_card" />
                         </figure>
                     </div>
                     <div class="CardText">
@@ -68,7 +104,7 @@
                         <figure>
                             <div class="circulo size-lg threeA"></div>
                             <div class="circulo size-ms threeB"></div>
-                            <img src="./assets/stadistics.png" alt="icono_card" />
+                            <img src="./assets/iamges/stadistics.png" alt="icono_card" />
                         </figure>
                     </div>
                     <div class="CardText">
@@ -80,6 +116,15 @@
             </div>
 
         </section>
+
+        <aside>
+            <div id="container-fixed-socialmedia">
+                <div class="social-circle"><figure><img src="./assets/images/twitter.png" alt="twitter"></figure></div>
+                <div class="social-circle"><figure><img src="./assets/images/facebook-app-symbol.png" alt="faceebook"></figure></div>
+                <div class="social-circle"><figure><img src="./assets/images/instagram.png" alt="instagram"></figure></div>
+                <div class="social-circle"><figure><img src="./assets/images/github.png" alt="github"></figure></div>
+            </div>
+        </aside>
+
     </body>
 </html>
-
