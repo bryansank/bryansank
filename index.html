@@ -10,8 +10,15 @@
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/global.css" />
         <link rel="stylesheet" href="./assets/css/header.css" />
+        <link rel="stylesheet" href="./assets/css/close_devices.css" />
+        <link rel="stylesheet" href="./assets/css/carrousel.css" />
     </head>
     <body>
+
+        <div id="closeForNotMobile">
+            <p>Sorry, this page, for now, is not available on Computers, only on a mobile. Sorry for this.</p>
+        </div>
+
         <header>
             <div id="main_text_content">
                 <img id="logo_main" src="./assets/img/logo_principal.svg" alt="Logo Principal" />
@@ -22,36 +29,22 @@
 
                 <p>I love Star Wars Movies⭐. I to think the stars have been in our backyard and if not is with software will be impossible arrived this.</p>
             </div>
-
-            <div class="container_btn_header">
-                    
-                <button id="contact_go">Let's talk about anything ✨</button>    
-                
-            </div>
         </header>
         <main>
-            <!-- <section>
-
-                <style>
-                    .card{
-                        background-color: #e7f5ff;
-                        width: 200px;
-                        height: 200px;
-                        box-shadow: 2px 3px 5px -2px #bababa;
-                        border-radius: 25px;
-                    }
-                    .card > img{
-                        background-image: linear-gradient(0deg, rgba(14, 14, 41, 0.8), rgba(14, 14, 41, 0) 30%);
-                        border-radius: 25px;
-                        max-width: 200px;
-                        max-height: 200px;
-                    }
-                </style>
-    
-                <div class="card">
-                    <img src="./assets/img/header_logo.png" alt="logo" />
+            <div class="carrousel">
+                <div class="grande">
+                    <img class="img" src="./assets/img/header_logo.png" alt="" />
+                    <img class="img" src="./assets/img/header_logo.png" alt="" />
+                    <img class="img" src="./assets/img/header_logo.png" alt="" />
                 </div>
-            </section> -->
+
+                <ul class="puntos">
+                    <li class="punto activo"></li>
+                    <li class="punto"></li>
+                    <li class="punto"></li>
+                </ul>
+            </div>
         </main>
+        <script src="./assets/js/app.js"></script>
     </body>
 </html>
