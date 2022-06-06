@@ -3,13 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     position: relative;
-
     background-color: #F6FBF4;
     min-height: 542px;
     min-width: 320px;
-    margin-bottom: 40px;
+    margin-top: -20px;
 }
 #logo_main{
     padding: 12px;
