@@ -1,9 +1,9 @@
 
 
-
-const grande = document.querySelector('.grande');
-const punto = document.querySelectorAll('.punto');
-const images = document.querySelectorAll('.img');
+// for carrousel logic.
+const grande = document.querySelector('.display_carrousel');
+const punto = document.querySelectorAll('.point_display');
+const images = document.querySelectorAll('.img_carrousel');
 
 
 punto.forEach( (point, i)=>{
@@ -14,12 +14,13 @@ punto.forEach( (point, i)=>{
         grande.style.transform = `translateX(${oper}%)`;
 
         punto.forEach((cu, i)=> {
-            punto[i].classList.remove('activo');
+            punto[i].classList.remove('active_point');
             
         });
 
         // Aqui esta recorriendo JUSTO ese boton asi que le asignamos activo
-        punto[i].classList.add('activo');
+        punto[i].classList.add('active_point');
         
     });
 })
+//

@@ -13,7 +13,7 @@ body {
     overflow-x: hidden;
 }
 
-.carrousel .grande {
+.carrousel .display_carrousel {
     width: 200%;
     /* background-color: orange; */
     border-radius: 20px;
@@ -30,7 +30,7 @@ body {
     cursor: pointer;
 }
 
-.carrousel .img {
+.carrousel .img_carrousel {
     width: calc(100% / 2);
 
     min-height: 10vh;
@@ -40,7 +40,7 @@ body {
     margin-top: 15px;
 }
 
-.carrousel .puntos {
+.carrousel .points_displays_carrousel {
     width: 100%;
     padding: .4em;
     margin: 1em 0 0;
@@ -51,7 +51,7 @@ body {
     align-items: center;
 }
 
-.carrousel .punto {
+.carrousel .point_display {
     width: 1em;
     height: 1em;
     background-color: #ffffff;
@@ -62,6 +62,6 @@ body {
 
 }
 
-.carrousel .punto.activo {
+.carrousel .point_display.active_point {
     background-color: orange;
 }
