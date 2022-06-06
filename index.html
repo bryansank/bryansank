@@ -1,130 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>bryansak</title>
-        <meta chartset="UTF-8" />
-        <!-- Fonts Google -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet" /> 
-
+        <title>Bryan Key</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Fuentes -->
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Source+Sans+Pro:wght@300;400;600&display=swap” rel=“stylesheet" />
         <!-- Styles -->
-        <link href="./assets/styles/step_one.css" rel="stylesheet"/>
-        <link href="./assets/styles/social.css" rel="stylesheet"/>
-
-        <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    
-        <style> 
-            :root{
-                --hospital: #11daa7;
-                --hospital-social: #5ceafff2;
-                --pink-color: #b29fd8;
-                --gray: #c1c1c1;
-                --green-light: #54fcb6;
-                --azulito-besho: #24d6ed57;
-
-                --lgBig: 40px;
-                --lg: 32px;
-                --md-l: 30px;
-                --md: 22px;
-                --md-m: 15px;
-                --sm: 12px;
-                --ms: 17px;
-            }
-
-            body{
-                margin: 0;
-                padding: 0;
-                font-family: 'Quicksand';
-            }
-
-            body::-webkit-scrollbar{
-                width: 6px;
-            }
-
-            body::-webkit-scrollbar-thumb{
-                background-color: var(--hospital-social);
-                border-radius: 50px;
-            }
-        </style>
+        <link rel="stylesheet" href="./assets/css/global.css" />
+        <link rel="stylesheet" href="./assets/css/header.css" />
+        <link rel="stylesheet" href="./assets/css/close_devices.css" />
+        <link rel="stylesheet" href="./assets/css/carrousel.css" />
     </head>
     <body>
 
-        <header class="contactMe">
-            <div class="contactMe_imageContainer">
-                <figure><img src="./assets/images/img_contact.jpg" alt="img-contact" /></figure>
-            </div>
-            <div class="contactMe_contentContainer">
-                <div class="contactMe_titleContainer">
-                    <h2>Do you want make product than change of world?</h2>
-                    <span>Mmm yeah! I help u with you great idea.</span>
-                </div>
-                <div class="contactMe_buttonsContainer">
-                    <button class="buttonCommon">Your Email</button>
-                    <button class="buttonCommon typeSecond">Get Checklist projects</button>
-                </div>
+        <div id="closeForNotMobile">
+            <p>Sorry, this page, for now, is not available on Computers, only on a mobile. Sorry for this.</p>
+        </div>
+
+        <header>
+            <div id="main_text_content">
+                <img id="logo_main" src="./assets/img/logo_principal.svg" alt="Logo Principal" />
+
+                <h1>Hey! 👋🏼 I am <span style="text-align: center ;display: block; font-weight: bold;font-family: system-ui;">Bryan Key</span></h1>
+
+                <p>Yes! My last name is Key🔑, although it sounds strange 😅. I be developer with +3 years of experience. Actually i work in <a href="#">@arturosdeverdad</a> as Developer Senior in Frontend and Backend with Javascript and Python.</p>
+
+                <p>I love Star Wars Movies⭐. I to think the stars have been in our backyard and if not is with software will be impossible arrived this.</p>
             </div>
         </header>
-
-        <section id="Cards-Services">
-
-            <h2>Hola Mundo! Esto es un Professional Marketing Solutions.</h2>
-
-            <div class="cardContainer">
-                <div class="Card">
-                    <div class="CardImage">
-                        <figure>
-                            <div class="circulo size-ms oneB"></div>
-                            <div class="circulo size-lg oneA"></div>
-                            <img src="./assets/images/note.png" alt="icono_card" />
-                        </figure>
-                    </div>
-                    <div class="CardText">
-                        <h2>Copywriting</h2>
-                        <p>Our copywriters can provide your website with proper texts.</p>
-                    </div>
+        <main>
+            <!-- Carrousel with my Projects -->
+            <section class="carrousel">
+                <div class="display_carrousel">
+                    <!-- TODO: Esto se debe llenar de un servicio -->
+                    <img class="img_carrousel" src="./assets/img/header_logo.png" alt="im1" />
+                    <img class="img_carrousel" src="./assets/img/header_logo.png" alt="im2" />
+                    <img class="img_carrousel" src="./assets/img/header_logo.png" alt="im3" />
                 </div>
 
-                <div class="Card">
-                    <div class="CardImage">
-                        <figure>
-                            <div class="circulo size-lg twoA"></div>
-                            <div class="circulo size-ms twoB"></div>
-                            <img src="./assets/images/shopping-cart.png" alt="icono_card" />
-                        </figure>
-                    </div>
-                    <div class="CardText">
-                        <h2>Analytics & Reseach</h2>
-                        <p>A&R services of LeadGen guarantee successful marketing results.</p>
-                    </div>
-                </div>
-
-                <div class="Card">
-                    <div class="CardImage">
-                        <figure>
-                            <div class="circulo size-lg threeA"></div>
-                            <div class="circulo size-ms threeB"></div>
-                            <img src="./assets/images/stadistics.png" alt="icono_card" />
-                        </figure>
-                    </div>
-                    <div class="CardText">
-                        <h2>Sales Growth</h2>
-                        <p>Our innovative marketing tools provide great sales growth.</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <aside>
-            <div id="container-fixed-socialmedia">
-                <div class="social-circle"><figure><img src="./assets/images/twitter.png" alt="twitter"></figure></div>
-                <div class="social-circle"><figure><img src="./assets/images/facebook-app-symbol.png" alt="faceebook"></figure></div>
-                <div class="social-circle"><figure><img src="./assets/images/instagram.png" alt="instagram"></figure></div>
-                <div class="social-circle"><figure><img src="./assets/images/github.png" alt="github"></figure></div>
-            </div>
-        </aside>
-
+                <ul class="points_displays_carrousel">
+                    <li class="point_display active_point"></li>
+                    <li class="point_display"></li>
+                    <li class="point_display"></li>
+                </ul>
+            </section>
+        </main>
+        <script src="./assets/js/app.js"></script>
     </body>
 </html>

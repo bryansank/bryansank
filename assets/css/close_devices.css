@@ -1,0 +1,24 @@
+#closeForNotMobile{
+    display: none;
+}
+
+@media (min-width: 426px) {
+    body{
+        position: relative;
+        overflow: hidden;
+    }
+
+    #closeForNotMobile{
+        padding: 30%;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        color: white;
+        z-index: 1;
+        position: absolute;
+        display: block;
+    }
+    #closeForNotMobile p{
+        text-align: center;
+    }
+}
