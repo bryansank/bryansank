@@ -1,53 +1,206 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Bryan Key</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Fuentes -->
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Source+Sans+Pro:wght@300;400;600&display=swap” rel=“stylesheet" />
-        <!-- Styles -->
-        <link rel="stylesheet" href="./assets/css/global.css" />
-        <link rel="stylesheet" href="./assets/css/header.css" />
-        <link rel="stylesheet" href="./assets/css/close_devices.css" />
-        <link rel="stylesheet" href="./assets/css/carrousel.css" />
-    </head>
-    <body>
+  <head>
+    <title>Bryan Key</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fuentes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Source+Sans+Pro:wght@300;400;600&display=swap” rel=“stylesheet"
+    />
+    <!-- Styles -->
+    <!-- <link rel="stylesheet" href="./assets/css/global.css" /> -->
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/close_devices.css" />
+    <link rel="stylesheet" href="./assets/css/technologies.css" />
+    <link rel="stylesheet" href="./assets/css/carrousel.css" />
 
-        <div id="closeForNotMobile">
-            <p>Sorry, this page, for now, is not available on Computers, only on a mobile. Sorry for this.</p>
+    <style>
+      :root {
+        --orange_rich: #ffb75e;
+        --soft-blue: #e7f5ff;
+        --grey: #bababa;
+        --color_backgroud_img: #95aec4;
+      }
+
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="closeForNotMobile">
+      <p>
+        Sorry, this page, for now, is not available on Computers, only on a
+        mobile. Sorry for this.
+      </p>
+    </div>
+
+    <header>
+      <div id="main_text_content">
+        <img
+          id="logo_main"
+          src="./assets/img/logo_principal.svg"
+          alt="Logo Principal"
+        />
+
+        <h1>Hey! 👋🏼 I am <span id="myName_text">Bryan Key</span></h1>
+
+        <p>
+          Yes! My last name is Key🔑, although it sounds strange 😅. I be
+          developer with +3 years of experience. Actually i work in
+          <a href="#">@arturosdeverdad</a> as Developer Senior in Frontend and
+          Backend with Javascript and Python.
+        </p>
+
+        <p>
+          I love Star Wars Movies⭐. I to think the stars have been in our
+          backyard and if not is with software will be impossible arrived this.
+        </p>
+      </div>
+    </header>
+    <main>
+
+      <!-- Enterprises and technologies -->
+      <section id="display_technologies">
+        <div id="display_technologies_grid">
+          <!-- Estos datos deben llenarse de Firebase -->
+          <div id="column_grid_one">
+            <p>Technologies and languages, I use in companies.</p>
+            <p>These are the languages and technologies that I use in companies, see was I worked.</p>
+          </div>
+
+          <div id="column_grid_two">
+            <div>
+              <figure>
+                <img
+                  src="./assets/img/javascript_icon.svg"
+                  alt="javascript"
+                  class="img_technologie"
+                />
+              </figure>
+              Javascript
+            </div>
+            <div>
+              <figure>
+                <img
+                  src="./assets/img/node.svg"
+                  alt="node"
+                  class="img_technologie"
+                />
+              </figure>
+              Node.js
+            </div>
+            <div>
+              <figure>
+                <img
+                  src="./assets/img/docker.svg"
+                  alt="Docker"
+                  class="img_technologie"
+                />
+              </figure>
+              Docker
+            </div>
+            <div>
+              <figure>
+                <img
+                  src="./assets/img/git.svg"
+                  alt="git"
+                  class="img_technologie"
+                />
+              </figure>
+              Git
+            </div>
+            <div>
+              <figure>
+                <img
+                  src="./assets/img/ubuntu.svg"
+                  alt="ubuntu"
+                  class="img_technologie"
+                />
+              </figure>
+              Ubuntu / WSL
+            </div>
+            <div>
+              <figure>
+                <img
+                  src="./assets/img/nestjs.svg"
+                  alt="nestjs"
+                  class="img_technologie"
+                />
+              </figure>
+              NestJs
+            </div>
+          </div>
+
+          <div id="column_grid_three">
+
+            <p>Enterprises</p>
+
+            <div>
+                <figure>
+                    <a href="https://www.andromedaventures.net/" target="_blank">
+                        <img
+                            src="./assets/img/andromeda-logo.png"
+                            alt="andromeda"
+                            class="img_technologie_enterprise"
+                        />
+                    </a>
+                </figure>
+            </div>
+
+            <div>
+                <figure>
+                    <a href="https://www.instagram.com/arturosdeverdad/?hl=en" target="_blank">
+                        <img
+                            src="./assets/img/arturos.png"
+                            alt="arturos"
+                            class="img_technologie_enterprise"
+                        />
+                    </a>
+                </figure>
+            </div>
+            
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Carrousel with my Projects -->
+      <section class="carrousel">
+        <div class="display_carrousel">
+          <!-- TODO: Esto se debe llenar de un servicio -->
+          <img
+            class="img_carrousel"
+            src="./assets/img/header_logo.png"
+            alt="im1"
+          />
+          <img
+            class="img_carrousel"
+            src="./assets/img/header_logo.png"
+            alt="im2"
+          />
+          <img
+            class="img_carrousel"
+            src="./assets/img/header_logo.png"
+            alt="im3"
+          />
         </div>
 
-        <header>
-            <div id="main_text_content">
-                <img id="logo_main" src="./assets/img/logo_principal.svg" alt="Logo Principal" />
+        <ul class="points_displays_carrousel">
+          <li class="point_display active_point"></li>
+          <li class="point_display"></li>
+          <li class="point_display"></li>
+        </ul>
+      </section>
 
-                <h1>Hey! 👋🏼 I am <span style="text-align: center ;display: block; font-weight: bold;font-family: system-ui;">Bryan Key</span></h1>
-
-                <p>Yes! My last name is Key🔑, although it sounds strange 😅. I be developer with +3 years of experience. Actually i work in <a href="#">@arturosdeverdad</a> as Developer Senior in Frontend and Backend with Javascript and Python.</p>
-
-                <p>I love Star Wars Movies⭐. I to think the stars have been in our backyard and if not is with software will be impossible arrived this.</p>
-            </div>
-        </header>
-        <main>
-            <!-- Carrousel with my Projects -->
-            <section class="carrousel">
-                <div class="display_carrousel">
-                    <!-- TODO: Esto se debe llenar de un servicio -->
-                    <img class="img_carrousel" src="./assets/img/header_logo.png" alt="im1" />
-                    <img class="img_carrousel" src="./assets/img/header_logo.png" alt="im2" />
-                    <img class="img_carrousel" src="./assets/img/header_logo.png" alt="im3" />
-                </div>
-
-                <ul class="points_displays_carrousel">
-                    <li class="point_display active_point"></li>
-                    <li class="point_display"></li>
-                    <li class="point_display"></li>
-                </ul>
-            </section>
-        </main>
-        <script src="./assets/js/app.js"></script>
-    </body>
+    </main>
+    <script src="./assets/js/app.js"></script>
+  </body>
 </html>

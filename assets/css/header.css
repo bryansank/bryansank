@@ -23,6 +23,13 @@
     margin-bottom: 20px;
 }
 
+#myName_text{
+    text-align: center ;
+    display: block; 
+    font-weight: bold;
+    font-family: system-ui;
+}
+
 #main_text_content  p{
     color: black;
     font-size: 17px;
