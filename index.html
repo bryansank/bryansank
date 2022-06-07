@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="./assets/css/close_devices.css" />
     <link rel="stylesheet" href="./assets/css/technologies.css" />
     <link rel="stylesheet" href="./assets/css/carrousel.css" />
+    <link rel="stylesheet" href="./assets/css/cv_card.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/contact_me.css" />
 
     <style>
       :root {
@@ -34,7 +37,7 @@
     </style>
   </head>
   <body>
-
+    <!-- TODO: Closed for PC -->
     <div id="closeForNotMobile">
       <p>
         Sorry, this page, for now, is not available on Computers, only on a
@@ -53,23 +56,25 @@
         <h1>Hey! 👋🏼 I am <span id="myName_text">Bryan Key</span></h1>
 
         <p>
-          Yes! My last name is Key🔑, although it sounds strange 😅. I be
+          Yes! My last name is Key🔑, although it sounds strange 😅. I am
           developer with +3 years of experience. Actually i work in
           <a href="#">@arturosdeverdad</a> as Developer Senior in Frontend and
           Backend with Javascript and Python.
         </p>
-
       </div>
     </header>
-    <main>
 
+    <main>
       <!-- Enterprises and technologies -->
       <section id="display_technologies">
         <div id="display_technologies_grid">
           <!-- Estos datos deben llenarse de Firebase -->
           <div id="column_grid_one">
             <p>Technologies and languages, I use in companies.</p>
-            <p>These are the languages and technologies that I use in companies, see was I worked.</p>
+            <p>
+              These are the languages and technologies that I use in companies,
+              see was I worked.
+            </p>
           </div>
 
           <div id="column_grid_two">
@@ -136,37 +141,37 @@
           </div>
 
           <div id="column_grid_three">
-
             <p>Experience in</p>
 
             <div>
-                <figure>
-                    <a href="https://www.instagram.com/arturosdeverdad/?hl=en" target="_blank">
-                        <img
-                            src="./assets/img/arturos.png"
-                            alt="arturos"
-                            class="img_technologie_enterprise"
-                        />
-                        <p>| Programador Web Senior</p>
-                    </a>
-                </figure>
+              <figure>
+                <a
+                  href="https://www.instagram.com/arturosdeverdad/?hl=en"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/img/arturos.png"
+                    alt="arturos"
+                    class="img_technologie_enterprise"
+                  />
+                  <p>| Programador Web Senior</p>
+                </a>
+              </figure>
             </div>
 
             <div>
-                <figure>
-                    <a href="https://www.andromedaventures.net/" target="_blank">
-                        <img
-                            src="./assets/img/andromeda-logo.png"
-                            alt="andromeda"
-                            class="img_technologie_enterprise"
-                        />
-                        <p>| Analista Programador.</p>
-                    </a>
-                </figure>
+              <figure>
+                <a href="https://www.andromedaventures.net/" target="_blank">
+                  <img
+                    src="./assets/img/andromeda-logo.png"
+                    alt="andromeda"
+                    class="img_technologie_enterprise"
+                  />
+                  <p>| Analista Programador.</p>
+                </a>
+              </figure>
             </div>
-            
           </div>
-
         </div>
       </section>
 
@@ -198,75 +203,91 @@
         </ul>
       </section>
 
-      <section>
-          <style>
-            #grillo {
-                display: grid;
-                grid-auto-flow: row;
-                border-radius: 15px;
-                /* grid-template-rows: 150px auto; */
-                padding: 10px;
-                margin: 10px 15px;
-                background-color: #F6FBF4;
-                row-gap: 25px;
-                box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
-                background: #4CA1AF;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  
-                /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to right, #C4E0E5, #4CA1AF); 
-                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            }
+      <section id="contact_me">
+        <div id="display_grid_contact_me">
+            
+            <h2>Contact Me</h2>
+            
+            <div>
+                <label for="contact_me_name">Your Name</label>
+                <input type="text" id="contact_me_name" name="name" placeholder="Michael Smith" />
+            </div>
 
-            #grillo h2{
-                padding: 15px;
-                text-align: center;
-                font-size: 23px;
-            }
-          </style>
-        <div id="grillo">
-            <h2>Remenber see my CV</h2>
-            <p>Check the my projects.</p>
-            <button>Download Cv</button>
+            <div>
+                <label for="contact_me_email">Your Email</label>
+                <input type="email" id="contact_me_email" name="email" placeholder="example@gmail.com" />
+            </div>
+
+            <div>
+                <label for="contact_me_message">Why contact me?</label>
+                <input type="text" id="contact_me_message" name="message" placeholder="..." />
+            </div>
+
+            <button id="btn_contact_me">Send Contact</button>
         </div>
       </section>
 
-      <section>
-          <style></style>
-          <div id="grilla">
-            <div>
-                <figure>
-                    <img src="" alt="" />
-                </figure>
-                <div>
-                    <p>Sigueme por aqui</p>
-                    <figure><img src="" alt="" /></figure>
-                    <figure><img src="" alt="" /></figure>
-                    <figure><img src="" alt="" /></figure>
-                </div>
-                <button>Up!@</button>
-            </div>
-
-            <div>
-                <ul>
-                    <li>
-                        <a href="">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="">About Me</a>
-                    </li>
-                    <li>
-                        <a href="">Portafolio</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <p>Copyright © 2022 bryansank</p>
-                <p>Hecho con ❤</p>
-            </div>
-          </div>
+      <!-- Card with my CV -->
+      <section id="card_dislay_CV">
+        <h2>Remenber check this!</h2>
+        <p>Check my projects</p>
+        <button id="btn_CV_display">Download CV</button>
       </section>
 
     </main>
+
+    <!-- Footer -->
+    <footer style="position: relative">
+      <div id="footer_grid_display">
+        <div>
+          <p>Follow me</p>
+
+          <div id="grid_icons_socialmedia">
+            <figure>
+              <a href="https://twitter.com/bryansank" target="_blank"
+                ><img
+                  class="medias_icon"
+                  src="./assets/img/Twitter.svg"
+                  alt="twitter"
+              /></a>
+            </figure>
+            <figure>
+              <a href="https://www.linkedin.com/in/bryansank/" target="_blank"
+                ><img
+                  class="medias_icon"
+                  src="./assets/img/linkedin.svg"
+                  alt="linkedin"
+              /></a>
+            </figure>
+            <figure>
+              <a href="https://www.instagram.com/bryansank/" target="_blank"
+                ><img
+                  class="medias_icon"
+                  src="./assets/img/Instagram.svg"
+                  alt="Instagram"
+              /></a>
+            </figure>
+          </div>
+        </div>
+
+        <div id="display_grid_links">
+          <a href="#">Inicio</a>
+          <a href="#">About Me</a>
+          <a href="#">Portafolio</a>
+        </div>
+
+        <div>
+          <p>Copyright © 2022 bryansank</p>
+          <p>Hecho con ❤</p>
+          <figure style="text-align: center">
+            <img class="firma" src="./assets/img/firma.png" alt="firma" />
+          </figure>
+        </div>
+      </div>
+
+      <button id="btn_up_page"><a href="#">Up!</a></button>
+    </footer>
+
     <script src="./assets/js/app.js"></script>
   </body>
 </html>
