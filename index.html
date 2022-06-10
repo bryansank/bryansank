@@ -34,8 +34,17 @@
         margin: 0;
         font-family: "Source Sans Pro", sans-serif;
       }
+
+      .sections {
+        margin: 20% auto;
+      }
+
+      .firts_section {
+        margin-top: 10%;
+      }
     </style>
   </head>
+
   <body>
     <!-- TODO: Closed for PC -->
     <div id="closeForNotMobile">
@@ -45,28 +54,28 @@
       </p>
     </div>
 
-    <header>
-      <div id="main_text_content">
-        <img
-          id="logo_main"
-          src="./assets/img/logo_principal.svg"
-          alt="Logo Principal"
-        />
+    <main id="main_content">
+      <header>
+        <div id="main_text_content">
+          <img
+            id="logo_main"
+            src="./assets/img/logo_principal.svg"
+            alt="Logo Principal"
+          />
 
-        <h1>Hey! 👋🏼 I am <span id="myName_text">Bryan Key</span></h1>
+          <h1>Hey! 👋🏼 I am <span id="myName_text">Bryan Key</span></h1>
 
-        <p>
-          Yes! My last name is Key🔑, although it sounds strange 😅. I am
-          developer with +3 years of experience. Actually i work in
-          <a href="#">@arturosdeverdad</a> as Developer Senior in Frontend and
-          Backend with Javascript and Python.
-        </p>
-      </div>
-    </header>
+          <p>
+            Yes! My last name is Key🔑, although it sounds strange 😅. I am
+            developer with +3 years of experience. Actually i work in
+            <a href="#">@arturosdeverdad</a> as Developer Senior in Frontend and
+            Backend with Javascript and Python.
+          </p>
+        </div>
+      </header>
 
-    <main>
       <!-- Enterprises and technologies -->
-      <section id="display_technologies">
+      <section class="sections firts_section" id="display_technologies">
         <div id="display_technologies_grid">
           <!-- Estos datos deben llenarse de Firebase -->
           <div id="column_grid_one">
@@ -178,7 +187,7 @@
       <!-- Carrousel with my Projects -->
       <section class="carrousel">
         <div class="display_carrousel">
-          <!-- TODO: Esto se debe llenar de un servicio -->
+          
           <img
             class="img_carrousel"
             src="./assets/img/header_logo.png"
@@ -195,7 +204,7 @@
             alt="im3"
           />
         </div>
-
+  
         <ul class="points_displays_carrousel">
           <li class="point_display active_point"></li>
           <li class="point_display"></li>
@@ -203,90 +212,105 @@
         </ul>
       </section>
 
-      <section id="contact_me">
+      <section class="sections" id="contact_me">
         <div id="display_grid_contact_me">
-            
-            <h2>Contact Me</h2>
-            
-            <div>
-                <label for="contact_me_name">Your Name</label>
-                <input type="text" id="contact_me_name" name="name" placeholder="Michael Smith" />
-            </div>
+          <h2>Contact Me</h2>
 
-            <div>
-                <label for="contact_me_email">Your Email</label>
-                <input type="email" id="contact_me_email" name="email" placeholder="example@gmail.com" />
-            </div>
+          <div>
+            <label for="contact_me_name">Your Name</label>
+            <input
+              type="text"
+              id="contact_me_name"
+              name="name"
+              placeholder="Michael Smith"
+            />
+          </div>
 
-            <div>
-                <label for="contact_me_message">Why contact me?</label>
-                <input type="text" id="contact_me_message" name="message" placeholder="..." />
-            </div>
+          <div>
+            <label for="contact_me_email">Your Email</label>
+            <input
+              type="email"
+              id="contact_me_email"
+              name="email"
+              placeholder="example@gmail.com"
+            />
+          </div>
 
-            <button id="btn_contact_me">Send Contact</button>
+          <div>
+            <label for="contact_me_message">Why contact me?</label>
+            <input
+              type="text"
+              id="contact_me_message"
+              name="message"
+              placeholder="..."
+            />
+          </div>
+
+          <button id="btn_contact_me" onclick="sendEmail()">
+            Send Contact
+          </button>
         </div>
       </section>
 
       <!-- Card with my CV -->
-      <section id="card_dislay_CV">
+      <section class="sections" id="card_dislay_CV">
         <h2>Remenber check this!</h2>
         <p>Check my projects</p>
         <button id="btn_CV_display">Download CV</button>
       </section>
 
-    </main>
+      <!-- Footer -->
+      <footer style="position: relative">
+        <div id="footer_grid_display">
+          <div>
+            <p>Follow me</p>
 
-    <!-- Footer -->
-    <footer style="position: relative">
-      <div id="footer_grid_display">
-        <div>
-          <p>Follow me</p>
+            <div id="grid_icons_socialmedia">
+              <figure>
+                <a href="https://twitter.com/bryansank" target="_blank"
+                  ><img
+                    class="medias_icon"
+                    src="./assets/img/Twitter.svg"
+                    alt="twitter"
+                /></a>
+              </figure>
+              <figure>
+                <a href="https://www.linkedin.com/in/bryansank/" target="_blank"
+                  ><img
+                    class="medias_icon"
+                    src="./assets/img/linkedin.svg"
+                    alt="linkedin"
+                /></a>
+              </figure>
+              <figure>
+                <a href="https://www.instagram.com/bryansank/" target="_blank"
+                  ><img
+                    class="medias_icon"
+                    src="./assets/img/Instagram.svg"
+                    alt="Instagram"
+                /></a>
+              </figure>
+            </div>
+          </div>
 
-          <div id="grid_icons_socialmedia">
-            <figure>
-              <a href="https://twitter.com/bryansank" target="_blank"
-                ><img
-                  class="medias_icon"
-                  src="./assets/img/Twitter.svg"
-                  alt="twitter"
-              /></a>
-            </figure>
-            <figure>
-              <a href="https://www.linkedin.com/in/bryansank/" target="_blank"
-                ><img
-                  class="medias_icon"
-                  src="./assets/img/linkedin.svg"
-                  alt="linkedin"
-              /></a>
-            </figure>
-            <figure>
-              <a href="https://www.instagram.com/bryansank/" target="_blank"
-                ><img
-                  class="medias_icon"
-                  src="./assets/img/Instagram.svg"
-                  alt="Instagram"
-              /></a>
+          <div id="display_grid_links">
+            <a href="#">Inicio</a>
+            <a href="#">About Me</a>
+            <a href="#">Portafolio</a>
+          </div>
+
+          <div>
+            <p>Copyright © 2022 bryansank</p>
+            <p>Hecho con ❤</p>
+            <figure style="text-align: center">
+              <img class="firma" src="./assets/img/firma.png" alt="firma" />
             </figure>
           </div>
         </div>
 
-        <div id="display_grid_links">
-          <a href="#">Inicio</a>
-          <a href="#">About Me</a>
-          <a href="#">Portafolio</a>
-        </div>
-
-        <div>
-          <p>Copyright © 2022 bryansank</p>
-          <p>Hecho con ❤</p>
-          <figure style="text-align: center">
-            <img class="firma" src="./assets/img/firma.png" alt="firma" />
-          </figure>
-        </div>
-      </div>
-
-      <button id="btn_up_page"><a href="#">Up!</a></button>
-    </footer>
+        <button id="btn_up_page"><a href="#">Up!</a></button>
+      </footer>
+    </main>
 
     <script src="./assets/js/app.js"></script>
   </body>

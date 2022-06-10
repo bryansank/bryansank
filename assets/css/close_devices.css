@@ -2,10 +2,11 @@
     display: none;
 }
 
-@media (min-width: 426px) {
-    body{
-        position: relative;
-        overflow: hidden;
+/* @media (min-width: 426px) { */
+@media (min-width: 769px) {
+
+    #main_content{
+        display: none;
     }
 
     #closeForNotMobile{

@@ -9,8 +9,8 @@
     row-gap: 25px;
     box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
     background: #f3a7ebb3;
-    background: -webkit-linear-gradient(to right, #acf3ff, #f3a7ebb3);
-    background: linear-gradient(to right,#acf3ff, #f3a7ebb3);
+    background: -webkit-linear-gradient(to right, #acf3ff, #ee6dcfe6);
+    background: linear-gradient(to right,#acf3ff, #ee6dcfe6);
 }
 
 #column_grid_one {
@@ -81,7 +81,26 @@
 }
 
 .img_technologie_enterprise{
-  height: 100%;
-  width: 100%;
+  width: 70%;
 }
 
+@media(min-width: 490px){
+  #display_technologies_grid{
+    display: grid;
+    grid-auto-flow: column;
+    border-radius: 15px;
+    
+    padding: 10px;
+    margin: 10px 15px;
+    background-color: #ebe9e9;
+    
+    box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
+    background: #f3a7ebb3;
+    background: -webkit-linear-gradient(to right, #acf3ff, #ee6dcfe6);
+    background: linear-gradient(to right,#acf3ff, #ee6dcfe6);
+  }
+
+  #img_technologie_enterprise{
+    width: 100%;
+  }
+}
