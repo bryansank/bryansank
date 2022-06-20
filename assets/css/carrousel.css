@@ -1,44 +1,42 @@
-body {
-    overflow-x: hidden;
-}
+
 
 .carrousel {
     width: 90%;
+    height: 90vh;
     max-width: 120em;
-    background-color: #B8C6DB;
     padding: 1em;
     margin: 1px auto;
+    background-color: #B8C6DB;
     border-radius: 20px;
     box-shadow: 1px 1px 1px #B8C6DB;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 
 .carrousel .display_carrousel {
+    height: 90%;
     width: 200%;
-    /* background-color: orange; */
-    border-radius: 20px;
     display: flex;
-    flex-flow: row nowrap;
+
     justify-content: flex-start;
     align-items: center;
-
     justify-content: space-between;
-
     transition: all.5s ease;
     transform: translateX(0%);
-
     cursor: pointer;
+    
 }
 
 .carrousel .img_carrousel {
     width: calc(100% / 2);
-
     min-height: 10vh;
-    border-radius: 32px;
-
+    border-radius: 20%;
     padding: 0px 17px;
     margin-top: 15px;
+    height: 95%;
 }
+
+/* Menu */
 
 .carrousel .points_displays_carrousel {
     width: 100%;
@@ -64,4 +62,18 @@ body {
 
 .carrousel .point_display.active_point {
     background-color: orange;
+}
+
+@media(max-width: 321px){
+    .carrousel{
+        width: 100%;
+    }   
+}
+
+@media(min-width: 767px){
+    .carrousel .img_carrousel{
+        margin: 0px 50px;
+    background: aliceblue;
+    border: 1px solid red;
+    }
 }
