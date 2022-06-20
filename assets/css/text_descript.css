@@ -1,0 +1,23 @@
+#section_description {
+    padding: 4%;
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+    align-items: center;
+}
+
+#section_description p {
+    color: black;
+    font-size: 17px;
+    padding: 15px;
+    font-weight: 500;
+    font-family: system-ui;
+}
+
+#section_description p>a {
+    text-decoration: none;
+    color: orangered;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
