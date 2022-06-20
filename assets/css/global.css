@@ -1,0 +1,25 @@
+/* @media (min-width:490px) {
+    
+} */
+@media (max-width:490px) {
+    #content_cards_CV_Contact{
+        display: unset;
+    }
+    #card_dislay_CV{
+        margin-top: 40px;
+    }
+}
+
+@media (min-width:500px) {
+    #card_dislay_CV{
+        max-height: 300px;
+        margin-top: 0px;
+    }
+    #contact_me{
+        width: 100%;
+    }
+
+    #content_cards_CV_Contact{
+        display: flex;
+    }
+}

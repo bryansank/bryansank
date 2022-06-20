@@ -1,5 +1,6 @@
 #contact_me{
-    margin-top: 25%;
+    /* margin-top: 10%; */
+    /* max-width: 400px; */
 }
 
 #display_grid_contact_me{
@@ -34,56 +35,7 @@
     margin-top: 20px;
 }
 
-#btn_contact_me {
-    background: #fff;
-    color: #000000;
-    font-weight: 600;
-    letter-spacing: 2px;
-    border: none;
-    padding: 16px 20px;
-    border-radius: 20px;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    display: inline-block;
-    margin: 20px;
-    -webkit-box-shadow: 7px 14px 13px -7px rgb(181 121 181 / 56%);
-    -moz-box-shadow: 7px 14px 13px -7px rgba(181, 121, 181, 0.56);
-    box-shadow: -1px 15px 18px -10px #b579b59e;
-}
-
-#btn_contact_me::after {
-    border-radius: 20px;
-    content: "";
-    background: #e45858;
-    border: 1px solid #b579b59e;
-    position: absolute;
-    z-index: -1;
-    padding: 16px 20px;
-    display: block;
-    top: 0;
-    bottom: 0;
-    left: 100%;
-    right: -100%;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-}
-
-#btn_contact_me:hover {
-    color: #ffffff;
-    /* color de fuente hover */
-}
-
-#btn_contact_me:hover::after {
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-}
-
-input[type=text], input[type=email], select {
+input[type=text], input[type=email], select, #contact_me_message{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -93,4 +45,12 @@ input[type=text], input[type=email], select {
     border-radius: 20px;
     box-shadow: 1px 1px 1px #ba86ff8a;
     color: black;
+}
+
+#contact_me_message{
+    display: block;
+    max-height: max-content;
+    
+    height: 100px;
+    resize: none;
 }
