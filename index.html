@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Source+Sans+Pro:wght@300;400;600&display=swap” rel=“stylesheet"
     />
     <!-- Styles -->
-    <!-- <link rel="stylesheet" href="./assets/css/global.css" /> -->
+    <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/close_devices.css" />
     <link rel="stylesheet" href="./assets/css/technologies.css" />
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./assets/css/cv_card.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/contact_me.css" />
+    <link rel="stylesheet" href="./assets/css/text_descript.css" />
 
     <style>
       :root {
@@ -35,6 +36,18 @@
         font-family: "Source Sans Pro", sans-serif;
       }
 
+      a {
+        color: #2042ff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #ffffff;
+      }
+      a:active {
+        color: #ffffff;
+      }
+
       .sections {
         margin: 20% auto;
       }
@@ -42,8 +55,73 @@
       .firts_section {
         margin-top: 10%;
       }
-      body {
-        overflow-x: hidden;
+
+      .button {
+        background: #fff;
+        color: #000000;
+        font-weight: 600;
+        letter-spacing: 2px;
+        border: none;
+        padding: 14px 20px;
+        border-radius: 20px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: inline-block;
+        margin: 20px;
+        -webkit-box-shadow: 7px 14px 13px -7px rgb(181 121 181 / 56%);
+        -moz-box-shadow: 7px 14px 13px -7px rgba(181, 121, 181, 0.56);
+        box-shadow: -1px 15px 18px -10px #b579b59e;
+      }
+
+      .button::after {
+        border-radius: 20px;
+        content: "";
+        background: #e45858;
+        border: 1px solid #b579b59e;
+        position: absolute;
+        z-index: -1;
+        padding: 14px 20px;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: -100%;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+      }
+
+      .button:hover {
+        color: #ffffff; /* color de fuente hover */
+      }
+
+      .button:hover::after {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+      }
+
+      .logo {
+        padding: 12px;
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 50px;
+        background-color: #5fd068;
+      }
+
+      .ico2 {
+        background-color: #e0ffd442;
+        width: 100%;
+        box-shadow: 1px 2px 3px #ff876c46;
+      }
+
+      .ico2:hover {
+        box-shadow: 1px 2px 3px #fd370b96;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
       }
     </style>
   </head>
@@ -59,23 +137,37 @@
 
     <main id="main_content">
       <header>
-        <div id="main_text_content">
+        <div id="header_main_text_content">
           <img
-            id="logo_main"
+            class="logo"
             src="./assets/img/logo_principal.svg"
             alt="Logo Principal"
           />
 
           <h1>Hey! 👋🏼 I am <span id="myName_text">Bryan Key</span></h1>
 
-          <p>
-            Yes! My last name is Key🔑, although it sounds strange 😅. I am
-            developer with +3 years of experience. Actually i work in
-            <a href="#">@arturosdeverdad</a> as Developer Senior in Frontend and
-            Backend with Javascript and Python.
-          </p>
+          <button class="button" id="btn_CV_display">
+            <a
+              class="anchor"
+              href="./assets/files/CV Bryan Key Hernandez.pdf"
+              download="CV Bryan Key"
+            >
+              Download CV
+            </a>
+          </button>
         </div>
       </header>
+
+      <article id="section_description">
+        <img class="logo ico2" src="./assets/img/ico2.svg" alt="icono 2" />
+
+        <p>
+          Yes! My last name is Key🔑, although it sounds strange 😅. I am
+          developer with +3 years of experience. Actually i work in
+          <a href="#">@arturosdeverdad</a> as Developer Senior in Frontend and
+          Backend with Javascript and React.
+        </p>
+      </article>
 
       <!-- Enterprises and technologies -->
       <section class="sections firts_section" id="display_technologies">
@@ -188,7 +280,7 @@
       </section>
 
       <!-- Carrousel with my Projects -->
-      <section class="carrousel">
+      <!-- <section class="carrousel">
         <div class="display_carrousel">
           
           <img
@@ -213,58 +305,69 @@
           <li class="point_display"></li>
           <li class="point_display"></li>
         </ul>
+      </section> -->
 
-      </section>
+      <article class="sections" id="content_cards_CV_Contact">
+        <section id="contact_me">
+          <div id="display_grid_contact_me">
+            <h2>Contact Me</h2>
 
-      <section class="sections" id="contact_me">
-        <div id="display_grid_contact_me">
-          <h2>Contact Me</h2>
+            <div>
+              <label for="contact_me_name">Your Name</label>
+              <input
+                type="text"
+                id="contact_me_name"
+                name="name"
+                placeholder="Michael Smith"
+              />
+            </div>
 
-          <div>
-            <label for="contact_me_name">Your Name</label>
-            <input
-              type="text"
-              id="contact_me_name"
-              name="name"
-              placeholder="Michael Smith"
-            />
+            <div>
+              <label for="contact_me_email">Your Email</label>
+              <input
+                type="email"
+                id="contact_me_email"
+                name="email"
+                placeholder="example@gmail.com"
+              />
+            </div>
+
+            <div>
+              <label for="contact_me_message">Why contact me?</label>
+              <textarea
+                type="text"
+                id="contact_me_message"
+                name="message"
+                placeholder="..."
+                minlength="20"
+                maxlength="80"
+              ></textarea>
+            </div>
+
+            <button class="button" id="btn_contact_me" onclick="sendEmail()">
+              Send Mail to Me
+            </button>
           </div>
+        </section>
 
-          <div>
-            <label for="contact_me_email">Your Email</label>
-            <input
-              type="email"
-              id="contact_me_email"
-              name="email"
-              placeholder="example@gmail.com"
-            />
-          </div>
-
-          <div>
-            <label for="contact_me_message">Why contact me?</label>
-            <input
-              type="text"
-              id="contact_me_message"
-              name="message"
-              placeholder="..."
-            />
-          </div>
-
-          <button id="btn_contact_me" onclick="sendEmail()">
-            Send Contact
+        <!-- Card with my CV -->
+        <section id="card_dislay_CV">
+          <h2>Remenber check this!</h2>
+          <p>Check my projects</p>
+          <button class="button" id="btn_CV_display">
+            <a
+              class="anchor"
+              href="./assets/files/CV Bryan Key Hernandez.pdf"
+              download="CV Bryan Key"
+            >
+              Download CV
+            </a>
           </button>
-        </div>
-      </section>
-
-      <!-- Card with my CV -->
-      <section class="sections" id="card_dislay_CV">
-        <h2>Remenber check this!</h2>
-        <p>Check my projects</p>
-        <button id="btn_CV_display">Download CV</button>
-      </section>
+        </section>
+      </article>
 
       <!-- Footer -->
-      <footer style="position: relative">
+      <footer id="footer_main">
         <div id="footer_grid_display">
           <div>
             <p>Follow me</p>

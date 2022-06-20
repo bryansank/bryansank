@@ -3,7 +3,7 @@
 }
 
 /* @media (min-width: 426px) { */
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
 
     #main_content{
         display: none;
