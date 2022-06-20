@@ -35,6 +35,18 @@
         font-family: "Source Sans Pro", sans-serif;
       }
 
+      a{
+        color: #2042ff;
+        text-decoration: none;
+      }
+
+      a:hover{
+        color: #ffffff;
+      }
+      a:active{
+        color: #ffffff;
+      }
+
       .sections {
         margin: 20% auto;
       }
@@ -90,10 +102,6 @@
         -webkit-transition: all 0.35s;
         transition: all 0.35s;
       }
-
-      #content_cards_CV_Contact{
-        display: flex;
-      }
       
     </style>
   </head>
@@ -118,14 +126,11 @@
 
           <h1>Hey! 👋🏼 I am <span id="myName_text">Bryan Key</span></h1>
 
-          <p>
-            Yes! My last name is Key🔑, although it sounds strange 😅. I am
-            developer with +3 years of experience. Actually i work in
-            <a href="#">@arturosdeverdad</a> as Developer Senior in Frontend and
-            Backend with Javascript and React.
-          </p>
-
-          <button class="button" id="btn_CV_display">Download CV</button>
+          <button class="button" id="btn_CV_display">
+            <a class="anchor" href="./assets/files/CV Bryan Key Hernandez.pdf" download="CV Bryan Key">
+              Download CV
+            </a>
+          </button>
 
         </div>
       </header>
@@ -316,7 +321,11 @@
         <section id="card_dislay_CV">
           <h2>Remenber check this!</h2>
           <p>Check my projects</p>
-          <button class="button" id="btn_CV_display">Download CV</button>
+          <button class="button" id="btn_CV_display">
+            <a class="anchor" href="./assets/files/CV Bryan Key Hernandez.pdf" download="CV Bryan Key">
+              Download CV
+            </a>
+          </button>
         </section>
       </article>
 

@@ -3,7 +3,7 @@
 } */
 @media (max-width:490px) {
     #content_cards_CV_Contact{
-        display: unset;
+        display: block;
     }
     #card_dislay_CV{
         margin-top: 40px;
@@ -11,6 +11,9 @@
 }
 
 @media (min-width:500px) {
+    #content_cards_CV_Contact{
+        display: flex;
+    }
     #card_dislay_CV{
         max-height: 300px;
         margin-top: 0px;
