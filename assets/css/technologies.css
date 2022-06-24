@@ -98,3 +98,11 @@
   }
 }
 
+@media (min-width: 1438px) {
+  .img_technologie_enterprise{
+    width: 60%;
+  }
+  #column_grid_three{
+    margin-top: none;
+  }
+}
