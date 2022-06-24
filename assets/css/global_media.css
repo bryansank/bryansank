@@ -19,10 +19,20 @@
         margin-top: 0px;
     }
     #contact_me{
-        width: 100%;
+        /* width: 100%; */
+        width: 60%;
+        margin: auto;
     }
 
     #content_cards_CV_Contact{
         display: flex;
+    }
+}
+
+@media (max-width: 600px){
+    .firts_section {
+        width: 100%;
+        margin: 0%;
+        margin-top: 10%;
     }
 }

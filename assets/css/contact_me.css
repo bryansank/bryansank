@@ -1,7 +1,8 @@
-#contact_me{
-    /* margin-top: 10%; */
-    /* max-width: 400px; */
-}
+/*#contact_me{
+    /* margin-top: 10%; 
+    /* max-width: 400px; 
+
+}*/
 
 #display_grid_contact_me{
     display: grid;
@@ -10,7 +11,7 @@
     
     /* grid-template-rows: 150px auto; */
     border-radius: 15px;
-    padding: 10px;
+    padding: 3%;
     text-align: center;
     color: black;
     font-weight: bold;
