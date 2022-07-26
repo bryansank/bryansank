@@ -66,3 +66,20 @@
     font-size: 14px;
     background: #65d068f7;
 }
+
+#btn_CV_display{
+    background: #e45858;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+#btn_CV_display .button:hover{
+    background: #fafafa;
+}
+#btn_CV_display a{
+    color: #fafafa;
+}
+#btn_CV_display a:hover{
+    color: #0044ff;
+}
+
+
