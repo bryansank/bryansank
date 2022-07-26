@@ -1,6 +1,6 @@
 ## Sitio Web personal con GitHub Pages.
 
-* NOTE: Now, only see on mobile.
+* NOTE: Now, only see on mobile (in tablets too).
 
 * English: Hello! This is my Personal repository.
 Little by little when I have free time, I will get my hands on this. The idea is to create an interactive website with multiple technologies and cryptocurrencies hehe
