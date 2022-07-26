@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Source+Sans+Pro:wght@300;400;600&display=swap” rel=“stylesheet"
     />
     <!-- Styles -->
-    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/global_media.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/close_devices.css" />
     <link rel="stylesheet" href="./assets/css/technologies.css" />
@@ -21,6 +21,119 @@
     <link rel="stylesheet" href="./assets/css/contact_me.css" />
     <link rel="stylesheet" href="./assets/css/text_descript.css" />
 
+<<<<<<< HEAD
+=======
+    <style>
+      :root {
+        --orange_rich: #ffb75e;
+        --soft-blue: #e7f5ff;
+        --grey: #bababa;
+        --color_backgroud_img: #95aec4;
+      }
+
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: "Source Sans Pro", sans-serif;
+      }
+
+      a {
+        color: #2042ff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #ffffff;
+      }
+      a:active {
+        color: #ffffff;
+      }
+
+      .sections {
+        margin: 20% auto;
+      }
+
+      .firts_section {
+        /* margin-top: 10%; */
+        margin: auto;
+        margin-top: 10%;
+        width: 80%;
+      }
+
+      .button {
+        background: #fff;
+        color: #000000;
+        font-weight: 600;
+        letter-spacing: 2px;
+        border: none;
+        padding: 14px 20px;
+        border-radius: 20px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        display: inline-block;
+        margin: 20px;
+        -webkit-box-shadow: 7px 14px 13px -7px rgb(181 121 181 / 56%);
+        -moz-box-shadow: 7px 14px 13px -7px rgba(181, 121, 181, 0.56);
+        box-shadow: -1px 15px 18px -10px #b579b59e;
+      }
+
+      .button::after {
+        border-radius: 20px;
+        content: "";
+        background: #e45858;
+        border: 1px solid #b579b59e;
+        position: absolute;
+        z-index: -1;
+        padding: 14px 20px;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: -100%;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+      }
+
+      .button:hover {
+        color: #ffffff; /* color de fuente hover */
+      }
+
+      .button:hover a{
+        color: #ffffff; /* color de fuente hover */
+      }
+
+      .button:hover::after {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+      }
+
+      .logo {
+        padding: 12px;
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 50px;
+        background-color: #5fd068;
+      }
+
+      .ico2 {
+        background-color: #e0ffd442;
+        width: 100%;
+        box-shadow: 1px 2px 3px #ff876c46;
+      }
+
+      .ico2:hover {
+        box-shadow: 1px 2px 3px #fd370b96;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+      }
+    </style>
+>>>>>>> 612502769a7731e41d5c9747371d8874218ee3fa
   </head>
 
   <body>
@@ -72,7 +185,7 @@
         <div id="display_technologies_grid">
           <!-- Estos datos deben llenarse de Firebase -->
           <div id="column_grid_one">
-            <p>Technologies and languages, I use in companies.</p>
+            <p>Technologies and languages</p>
             <p>
               These are the languages and technologies that I use in companies,
               see was I worked.
