@@ -4,13 +4,21 @@
     border-radius: 15px;
     grid-template-rows: 150px auto;
     padding: 10px;
-    margin: 10px 15px;
-    background-color: #ebe9e9;
+
+    
     row-gap: 25px;
     box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
     background: #f3a7ebb3;
-    background: -webkit-linear-gradient(to right, #acf3ff, #ee6dcfe6);
-    background: linear-gradient(to right,#acf3ff, #ee6dcfe6);
+    background: linear-gradient(to right,#acf3ff7d, #ee6dcf6b);
+
+    max-width: 45rem;
+    margin: .4rem;
+}
+
+@media (min-width: 720px) {
+  #display_technologies_grid{
+    margin: 1rem auto;
+  }
 }
 
 #column_grid_one {
@@ -81,23 +89,19 @@
   width: 55px;
 }
 
-.img_technologie_enterprise{
-  width: 70%;
-}
+
 
 @media(min-width: 490px){
   #display_technologies_grid{
     grid-auto-flow: column;
   }
 
-  #img_technologie_enterprise{
-    width: 100%;
-  }
-
   #column_grid_three{
     margin-top: 40%;
   }
 }
+
+
 
 @media (min-width: 851px) {
   #column_grid_three{
@@ -106,10 +110,13 @@
 }
 
 @media (min-width: 1350px) {
-  .img_technologie_enterprise{
-    width: 60%;
-  }
   #column_grid_three{
     margin-top: none;
   }
+}
+
+/* # change position */
+#img_iked{
+  height: 7rem;
+width: 16rem;
 }

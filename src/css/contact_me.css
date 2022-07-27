@@ -10,18 +10,17 @@
     row-gap: 25px;
     
     /* grid-template-rows: 150px auto; */
-    border-radius: 15px;
-    padding: 3%;
+    border-radius: 1rem;
+    padding: 1rem;
     text-align: center;
     color: black;
     font-weight: bold;
-    font-size: 18px;
-    margin: 10px 15px;
+    font-size: 1.3rem;
+    /* margin: 10px 15px; */
+    margin: 1rem 1rem;
     
     background: #4ca1af;
-    background: -webkit-linear-gradient(to right, #4ca1af, #acf3ff);
     background: linear-gradient(to right, #7cdceb, #acf3ff);
-
     box-shadow: #00000030 0px 10px 20px, #0000003b 0px 6px 6px;
 }
 

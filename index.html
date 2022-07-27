@@ -3,7 +3,7 @@
   <head>
     <title>Bryan Key</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Fuentes -->
@@ -11,53 +11,63 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Source+Sans+Pro:wght@300;400;600&display=swap” rel=“stylesheet"
     />
     <!-- Styles -->
-    <link rel="stylesheet" href="./assets/css/global_media.css" />
-    <link rel="stylesheet" href="./assets/css/header.css" />
-    <link rel="stylesheet" href="./assets/css/close_devices.css" />
-    <link rel="stylesheet" href="./assets/css/technologies.css" />
-    <link rel="stylesheet" href="./assets/css/carrousel.css" />
-    <link rel="stylesheet" href="./assets/css/cv_card.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css" />
-    <link rel="stylesheet" href="./assets/css/contact_me.css" />
-    <link rel="stylesheet" href="./assets/css/text_descript.css" />
+    <link rel="stylesheet" href="./src/css/global_media.css" />
+    <link rel="stylesheet" href="./src/css/query_viewport_device.css" />
 
+    <link rel="stylesheet" href="./src/css/header.css" />
+
+    <link rel="stylesheet" href="./src/css/section_description_me.css" />
+
+    <link rel="stylesheet" href="./src/css/technologies.css" />
+    <link rel="stylesheet" href="./src/css/experience_section.css" />
+
+    <link rel="stylesheet" href="./src/css/carrousel.css" />
+
+    <link rel="stylesheet" href="./src/css/cv_card.css" />
+    <link rel="stylesheet" href="./src/css/contact_me.css" />
+
+    <link rel="stylesheet" href="./src/css/footer.css" />
   </head>
 
   <body>
-    <!-- TODO: Closed for PC -->
-    <div id="closeForNotMobile">
+    <section id="SectionForViewPortNotSupport">
       <p>
-        Sorry, this page, for now, is not available on Computers, only on a
+        Sorry, this page, for now, is not available on Computers , only on a
         mobile. Sorry for this.
       </p>
-    </div>
+    </section>
 
     <main id="main_content">
+      <header id="header_main_text_content">
+        <img
+          class="logo"
+          src="./assets/img/logo_principal.svg"
+          alt="Logo Principal"
+          width="100"
+          height="100"
+        />
 
-      <header>
-        <div id="header_main_text_content">
-          <img
-            class="logo"
-            src="./assets/img/logo_principal.svg"
-            alt="Logo Principal"
-          />
+        <h1>Hey! 👋🏼 I am <span id="myName_text">Bryan Key</span></h1>
 
-          <h1>Hey! 👋🏼 I am <span id="myName_text">Bryan Key</span></h1>
-
-          <button class="button" id="btn_CV_display">
-            <a
-              class="anchor"
-              href="./assets/files/CV Bryan Key Hernandez.pdf"
-              download="CV Bryan Key"
-            >
-              Download CV
-            </a>
-          </button>
-        </div>
+        <button class="button" id="btn_CV_display">
+          <a
+            class="anchor"
+            href="./assets/files/CV Bryan Key Hernandez.pdf"
+            download="CV Bryan Key"
+          >
+            Download CV
+          </a>
+        </button>
       </header>
 
       <article id="section_description">
-        <img class="logo ico2" src="./assets/img/ico2.svg" alt="icono 2" />
+        <img
+          class="logo ico2"
+          src="./assets/img/ico2.svg"
+          alt="icono 2"
+          width="100"
+          height="100"
+        />
 
         <p>
           Yes! My last name is Key🔑, although it sounds strange 😅. I am
@@ -69,23 +79,25 @@
 
       <!-- Enterprises and technologies -->
       <section class="sections firts_section" id="display_technologies">
-        <div id="display_technologies_grid">
+        <article id="display_technologies_grid">
           <!-- Estos datos deben llenarse de Firebase -->
-          <div id="column_grid_one">
+          <section id="column_grid_one">
             <p>Technologies and languages</p>
             <p>
               These are the languages and technologies that I use in companies,
               see was I worked.
             </p>
-          </div>
+          </section>
 
-          <div id="column_grid_two">
+          <section id="column_grid_two">
             <div>
               <figure>
                 <img
                   src="./assets/img/javascript_icon.svg"
                   alt="javascript"
                   class="img_technologie"
+                  width="100"
+                  height="100"
                 />
               </figure>
               Javascript
@@ -93,9 +105,59 @@
             <div>
               <figure>
                 <img
+                  src="./assets/img/react.svg"
+                  alt="Reactjs"
+                  class="img_technologie"
+                  width="100"
+                  height="100"
+                />
+              </figure>
+              React
+            </div>
+            <div>
+              <figure>
+                <img
+                  src="./assets/img/redux.svg"
+                  alt="Reduxjs"
+                  class="img_technologie"
+                  width="100"
+                  height="100"
+                />
+              </figure>
+              Redux
+            </div>
+            <div>
+              <figure>
+                <img
+                  src="./assets/img/nextjs.svg"
+                  alt="nextjs"
+                  class="img_technologie"
+                  width="100"
+                  height="100"
+                />
+              </figure>
+              NextJs
+            </div>
+            <div>
+              <figure>
+                <img
+                  src="./assets/img/firebase.svg"
+                  alt="Firebase"
+                  class="img_technologie"
+                  width="100"
+                  height="100"
+                />
+              </figure>
+              Firebase
+            </div>
+            <div>
+              <figure>
+                <img
                   src="./assets/img/node.svg"
                   alt="node"
                   class="img_technologie"
+                  width="100"
+                  height="100"
                 />
               </figure>
               Node.js
@@ -106,6 +168,8 @@
                   src="./assets/img/docker.svg"
                   alt="Docker"
                   class="img_technologie"
+                  width="100"
+                  height="100"
                 />
               </figure>
               Docker
@@ -116,6 +180,8 @@
                   src="./assets/img/git.svg"
                   alt="git"
                   class="img_technologie"
+                  width="100"
+                  height="100"
                 />
               </figure>
               Git
@@ -126,6 +192,8 @@
                   src="./assets/img/ubuntu.svg"
                   alt="ubuntu"
                   class="img_technologie"
+                  width="100"
+                  height="100"
                 />
               </figure>
               Ubuntu / WSL
@@ -136,45 +204,84 @@
                   src="./assets/img/nestjs.svg"
                   alt="nestjs"
                   class="img_technologie"
+                  width="100"
+                  height="100"
                 />
               </figure>
               NestJs
             </div>
+          </section>
+        </article>
+      </section>
+
+      <section class="sections">
+        <article id="display_experience_flex">
+          <h2>Experience in</h2>
+
+          <div>
+            <figure>
+              <a href="https://talently.tech/" target="_blank">
+                <img
+                  src="./assets/img/talently.svg"
+                  alt="talently"
+                  class="img_technologie_enterprise"
+                  width="100"
+                  height="100"
+                />
+                <p>| Tech Mentor.</p>
+              </a>
+            </figure>
           </div>
 
-          <div id="column_grid_three">
-            <p>Experience in</p>
-
-            <div>
-              <figure>
-                <a
-                  href="https://www.instagram.com/arturosdeverdad/?hl=en"
-                  target="_blank"
-                >
-                  <img
-                    src="./assets/img/arturos.png"
-                    alt="arturos"
-                    class="img_technologie_enterprise"
-                  />
-                  <p>| Programador Web Senior</p>
-                </a>
-              </figure>
-            </div>
-
-            <div>
-              <figure>
-                <a href="https://www.andromedaventures.net/" target="_blank">
-                  <img
-                    src="./assets/img/andromeda-logo.png"
-                    alt="andromeda"
-                    class="img_technologie_enterprise"
-                  />
-                  <p>| Analista Programador.</p>
-                </a>
-              </figure>
-            </div>
+          <div>
+            <figure>
+              <a
+                href="https://www.instagram.com/arturosdeverdad/?hl=en"
+                target="_blank"
+              >
+                <img
+                  src="./assets/img/arturos.png"
+                  alt="arturos"
+                  class="img_technologie_enterprise"
+                  width="100"
+                  height="100"
+                />
+                <p>| Programador Web Senior</p>
+              </a>
+            </figure>
           </div>
-        </div>
+
+          <div>
+            <figure>
+              <a href="https://www.andromedaventures.net/" target="_blank">
+                <img
+                  src="./assets/img/andromeda-logo.png"
+                  alt="andromeda"
+                  class="img_technologie_enterprise"
+                  width="100"
+                  height="100"
+                />
+                <p>| Analista Programador.</p>
+              </a>
+            </figure>
+          </div>
+
+          <div>
+            <figure>
+              <a href="https://www.instagram.com/grupo_iked/" target="_blank">
+                <img
+                  id="img_iked"
+                  src="./assets/img/ikedv.png"
+                  alt="ikedv"
+                  class="img_technologie_enterprise"
+                  width="100"
+                  height="100"
+                />
+                <p>| Analista Programador (Freelance)</p>
+              </a>
+            </figure>
+          </div>
+        </article>
       </section>
 
       <!-- Carrousel with my Projects -->
@@ -206,53 +313,51 @@
       </section> -->
 
       <article class="sections" id="content_cards_CV_Contact">
-        <section id="contact_me">
-          <div id="display_grid_contact_me">
-            <h2>Contact Me</h2>
+        <section id="display_grid_contact_me">
+          <h2>Contact Me</h2>
 
-            <div>
-              <label for="contact_me_name">Your Name</label>
-              <input
-                type="text"
-                id="contact_me_name"
-                name="name"
-                placeholder="Michael Smith"
-              />
-            </div>
-
-            <div>
-              <label for="contact_me_email">Your Email</label>
-              <input
-                type="email"
-                id="contact_me_email"
-                name="email"
-                placeholder="example@gmail.com"
-              />
-            </div>
-
-            <div>
-              <label for="contact_me_message">Why contact me?</label>
-              <textarea
-                type="text"
-                id="contact_me_message"
-                name="message"
-                placeholder="..."
-                minlength="20"
-                maxlength="80"
-              ></textarea>
-            </div>
-
-            <button class="button" id="btn_contact_me" onclick="sendEmail()">
-              Send Mail to Me
-            </button>
+          <div>
+            <label for="contact_me_name">Your Name</label>
+            <input
+              type="text"
+              id="contact_me_name"
+              name="name"
+              placeholder="Michael Smith"
+            />
           </div>
+
+          <div>
+            <label for="contact_me_email">Your Email</label>
+            <input
+              type="email"
+              id="contact_me_email"
+              name="email"
+              placeholder="example@gmail.com"
+            />
+          </div>
+
+          <div>
+            <label for="contact_me_message">Why contact me?</label>
+            <textarea
+              type="text"
+              id="contact_me_message"
+              name="message"
+              placeholder="..."
+              minlength="20"
+              maxlength="80"
+            ></textarea>
+          </div>
+
+          <button class="button" id="btn_contact_me" onclick="sendEmail()">
+            Send Mail to Me
+          </button>
         </section>
 
         <!-- Card with my CV -->
         <section id="card_dislay_CV">
           <h2>Remenber check this!</h2>
           <p>Check my projects</p>
-          <button class="button" id="btn_CV_display">
+          <button class="button">
             <a
               class="anchor"
               href="./assets/files/CV Bryan Key Hernandez.pdf"
@@ -277,6 +382,8 @@
                     class="medias_icon"
                     src="./assets/img/Twitter.svg"
                     alt="twitter"
+                    width="100"
+                    height="100"
                 /></a>
               </figure>
               <figure>
@@ -285,6 +392,8 @@
                     class="medias_icon"
                     src="./assets/img/linkedin.svg"
                     alt="linkedin"
+                    width="100"
+                    height="100"
                 /></a>
               </figure>
               <figure>
@@ -293,6 +402,8 @@
                     class="medias_icon"
                     src="./assets/img/Instagram.svg"
                     alt="Instagram"
+                    width="100"
+                    height="100"
                 /></a>
               </figure>
             </div>
@@ -308,14 +419,19 @@
             <p>Copyright © 2022 bryansank</p>
             <p>Hecho con ❤</p>
             <figure style="text-align: center">
-              <img class="firma" src="./assets/img/firma.png" alt="firma" />
+              <img
+                class="firma"
+                src="./assets/img/firma.png"
+                alt="firma"
+                width="100"
+                height="100"
+              />
             </figure>
           </div>
         </div>
 
         <button id="btn_up_page"><a href="#">Up!</a></button>
       </footer>
-      
     </main>
 
     <script src="./assets/js/app.js"></script>

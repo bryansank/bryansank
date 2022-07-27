@@ -4,6 +4,7 @@
     justify-items: center;
     gap: 30px;
     align-items: center;
+    max-width: 45rem;
 }
 
 #section_description p {
@@ -20,4 +21,10 @@
     font-weight: bold;
     font-style: italic;
     cursor: pointer;
+}
+
+@media (min-width:765px) {
+    #section_description{
+        margin: 0 auto;
+    }
 }
