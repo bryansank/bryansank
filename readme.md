@@ -8,30 +8,33 @@ Little by little when I have free time, I will get my hands on this. The idea is
 * Spanish: ¡Hola! Este es mi repositorio Personal.
 Poco a poco cuando tenga tiempo libre, le ire metiendo mano a esto. La idea es crear un sitio web interactivo con multiples tecnologias y cryptomonedas jeje
 
-## Comenzando 🚀
+## Get Start 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+_These instructions will allow you to get a copy of the project running on your local machine for development and testing purposes._
 
-Code Live Server.
-
+~~~
+$ git clone https://github.com/bryansank/bryansank.github.io.git main
+~~~
 
 ## How to see
 [![readme.png](https://i.postimg.cc/Hkrytj4X/readme.png)](https://postimg.cc/68NqWWPp)
 
 ### Requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+_What you need? to install the software and how to install them._
 
-## Autores ✒️
+Install, code live server extension.
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+## Author ✒️
+
+_Mention all those who helped to raise the project from its beginnings._
 
 * **Bryan Key** - *Trabajo Inicial* - [dev_bryansank](https://github.com/bryansank)
 * **Bryan Key** - *Documentación* - [dev_bryansank](https://github.com/bryansank) 
 
-## Licencia 📄
+## License 📄
 
-Este proyecto está bajo la licencia del HONOR.
+* MIT
 
 ## Expresiones de Gratitud 🎁
 
