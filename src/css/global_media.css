@@ -35,6 +35,7 @@ a:active {
 }
 
 .button {
+  cursor: pointer;
   background: #fff;
   color: #000000;
   font-weight: 600;
